@@ -5,4 +5,4 @@
  * @author Owner
  *
  */
-package com.diworksdev.templete.util;
+package com.diworksdev.template.dto;

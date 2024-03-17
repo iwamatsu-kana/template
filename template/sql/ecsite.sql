@@ -22,7 +22,7 @@ create table item_info_transaction(
 	item_price int,
 	item_stock int,
 	insert_date datetime,
-	update_date dateime
+	update_date datetime
 );
 
 drop table if exists user_buy_item_transaction;

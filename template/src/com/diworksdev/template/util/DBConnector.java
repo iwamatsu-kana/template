@@ -6,8 +6,8 @@ import java.sql.SQLException;
 public class DBConnector {
 		private static String driverName = "com.mysql.jdbc.Driver";
 		private static String url = "jdbc:mysql://localhost/ecsite";
-		private static String user ="root";
-		private static String password ="";
+		private static String user = "root";
+		private static String password = "";
 
 		public Connection getConnection() {
 		Connection con = null;
@@ -16,8 +16,8 @@ public class DBConnector {
 			Class.forName(driverName);
 			con = (Connection) DriverManager.getConnection(url,user,password);
 		} catch(ClassNotFoundException e)
-				{e.printStackTrace();
-		} catch(SQLException e) {e.printStackTrace();
+				{ e.printStackTrace();
+		} catch(SQLException e) { e.printStackTrace();
 		}
 
 		return con;

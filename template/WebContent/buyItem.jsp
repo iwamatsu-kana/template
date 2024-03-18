@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF- 8 " pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF- 8 " pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html>
 <html>
@@ -70,6 +70,7 @@
 				</td>
 				<td>
 					<s:property value="session.buyItem_name"/>
+				</td>
 			</tr>
 			<tr>
 				<td>
@@ -99,8 +100,8 @@
 					<span>支払い方法</span>
 				</td>
 				<td>
-					<input type="radio" name="pay" value="1" checked="checked">現金払い
-					<input type="radio" name="pay" value="2">クレジットカード
+					<input type="radio" name="pay" value="1" checked="checked"> 現金払い
+					<input type="radio" name="pay" value="2"> クレジットカード
 				</td>
 			</tr>
 			<tr>

@@ -5,7 +5,7 @@
 "http://struts.apache.org/dtds/struts-2.3.dtd">
 <!-- Strutsの詳細設定 -->
 
-<sturuts>
+<struts>
 	<constant name="struts.devMode" value="true"/>
 <!-- 対象のpackageを設定 -->
 	<package name="com.diworksdev.template.action" extends="struts-default">
@@ -53,4 +53,4 @@
 		</action>
 
 	</package>
-</sturuts>
+</struts>

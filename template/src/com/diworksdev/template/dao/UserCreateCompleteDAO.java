@@ -18,7 +18,7 @@ SQLException {
 		Connection connection=dbConnector.getConnection();
 
 		try {
-			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			PreparedStatement preparedStatement=connection.prepareStatement(sql);
 			preparedStatement.setString(1,loginUserId);
 			preparedStatement.setString(2,loginUserPassword);
 			preparedStatement.setString(3,userName);

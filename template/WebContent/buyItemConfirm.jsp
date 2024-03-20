@@ -15,43 +15,43 @@
 	/* ========TAG LAYOUT======== */
 
 	body {
-		margin:0;
-		padding:0;
-		line-height:1.6;
-		letter-spacing:1px;
-		font-family:Verdana, Helvetica, sans-serif;
-		font-size:12px;
-		color:#333;
-		background:#fff;
+		margin : 0;
+		padding : 0;
+		line-height : 1.6;
+		letter-spacing : 1px;
+		font-family : Verdana, Helvetica, sans-serif;
+		font-size : 12px;
+		color : #333;
+		background : #fff;
 	}
 
 	table {
-		text-align:center;
-		margin:0 auto;
+		text-align : center;
+		margin : 0 auto;
 	}
 	/* ========ID LAYOUT======== */
 	#top {
-		width:780px;
-		margin:30px auto;
+		width : 780px;
+		margin : 30px auto;
 		border : 1px solid #333;
 	}
 
 	#header {
-		width: 100%;
-		height: 80px;
-		background-color: black;
+		width : 100%;
+		height : 80px;
+		background-color : black;
 	}
 
 	#main {
-		width: 100%;
-		height: 500px;
-		text-align: center;
+		width : 100%;
+		height : 500px;
+		text-align : center;
 	}
 
 	#footer {
-		width: 100%;
-		height: 80px;
-		background-color: black; clear:both;
+		width : 100%;
+		height : 80px;
+		background-color : black; clear : both;
 	}
 
 	</style>
@@ -70,25 +70,27 @@
 			<table>
 			<tr>
 				<td>商品名</td>
-				<td><s:property value="session.buyItem_name" /></td>
+				<td><s:property value="session.buyItem_name"/></td>
 
 			</tr>
 			<tr>
 				<td>値段</td>
 			<td>
-				<s:property value="session.buyItem_price" />
+				<s:property value="session.buyItem_price"/>
 				<span>円</span>
 			</td>
 		</tr>
 		<tr>
 				<td>購入個数</td>
 				<td>
-					<s:property value="session.stock" />
+					<s:property value="session.stock"/>
 					<span>個</span>
 				</td>
+		</tr>
+		<tr>
 				<td>支払い方法</td>
 				<td><s:property value="session.pay"/></td>
-
+		</tr>
 		<tr>
 				<td><s:submit value="完了"/></td>
 		</tr>

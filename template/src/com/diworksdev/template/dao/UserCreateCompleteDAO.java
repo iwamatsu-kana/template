@@ -2,8 +2,8 @@ package com.diworksdev.template.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import com.internousdev.template.util.DBConnector;
-import com.internousdev.template.util.DateUtil;
+import com.diworksdev.template.util.DBConnector;
+import com.diworksdev.template.util.DateUtil;
 
 public class UserCreateCompleteDAO{
 		private DateUtil dateUtil=new DateUtil();

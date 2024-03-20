@@ -12,43 +12,43 @@
 	<title>UserCreateConfirm画面</title>
 
 	<style type="text/css">
-	/ * ========TAG LAYOUT======== * /
-	body{
-		margin:0;
-		padding:0;
-		line-height:1.6; letter-spacing:1px;
-		font-family:Verdana,Helvetica,sans-serif;
-		font-size:12px;
-		color:#333;
-		background:#fff;
+	/* ========TAG LAYOUT======== */
+	body {
+		margin : 0;
+		padding : 0;
+		line-height : 1.6; letter-spacing : 1px;
+		font-family : Verdana, Helvetica, sans-serif;
+		font-size : 12px;
+		color : #333;
+		background : #fff;
 	}
-	table{
-		text-align:center;
-		margin:0 auto;
+	table {
+		text-align : center;
+		margin : 0 auto;
 	}
-	/ * ========ID LAYOUT======== * /
-	#top{
-		width:780px;
-		margin:30px auto;
+	/* ========ID LAYOUT======== */
+	#top {
+		width : 780px;
+		margin : 30px auto;
 		border : 1px solid #333;
 	}
 
-	#header{
-		width:100%;
-		height:80px;
-		background-color:black;
+	#header {
+		width : 100%;
+		height : 80px;
+		background-color : black;
 	}
 
-	#main{
-		width:100%;
-		height:500px;
-		text-align:center;
+	#main {
+		width : 100%;
+		height : 500px;
+		text-align : center;
 	}
 
-	#footer{
-		width:100%;
-		height:80px;
-		background-color:black; clear:both;
+	#footer {
+		width : 100%;
+		height : 80px;
+		background-color : black; clear : both;
 	}
 
 	</style>
@@ -65,14 +65,14 @@
 	<div>
 		<h3>登録する内容は以下でよろしいですか。</h3>
 		<table>
-			<s:form action="UserCreateCompleteAction"/>
+			<s:form action="UserCreateCompleteAction">
 
 			<tr id="box">
 				<td>
 					<label>ログインID:</label>
 				</td>
 				<td>
-					<s:property value="loginUserId" escape="false" />
+					<s:property value="loginUserId" escape="false"/>
 				</td>
 			</tr>
 			<tr id="box">
@@ -97,6 +97,7 @@
 					<s:submit value="完了"/>
 				</td>
 			</tr>
+			</s:form>
 		</table>
 	</div>
 	</div>

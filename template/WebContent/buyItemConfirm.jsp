@@ -12,7 +12,7 @@
 	<title>buyItemConfirm画面</title>
 
 	<style type="text/css">
-	/ * ========TAG LAYOUT======== * /
+	/* ========TAG LAYOUT======== */
 
 	body {
 		margin:0;
@@ -29,7 +29,7 @@
 		text-align:center;
 		margin:0 auto;
 	}
-	/ * ========ID LAYOUT======== * /
+	/* ========ID LAYOUT======== */
 	#top {
 		width:780px;
 		margin:30px auto;

@@ -20,23 +20,22 @@ ubit.pay FROM user_buy_item_transaction ubit LEFT JOIN item_info_transaction iit
 ubit.item_transaction_id = iit.id WHERE ubit.item_transaction_id = ? AND
 ubit.user_master_id = ? ORDER BY ubit.insert_date DESC";
 
-			try{
-				PreparedStatement preparedStatement=
-connection.prepareStatement(sql);
+			try {
+				PreparedStatement preparedStatement = connection.prepareStatement(sql);
 				preparedStatement.setString(1,item_transaction_id);
 				preparedStatement.setString(2,user_master_id);
 				ResultSet resultSet = preparedStatement.executeQuery();
 
 				if(resultSet.next())
-					{myPageDTO.setItemName(resultSet.getString("item_name"));
+				{myPageDTO.setItemName(resultSet.getString("item_name"));
 				myPageDTO.setTotalPrice(resultSet.getString("total_price"));
 				myPageDTO.setTotalCount(resultSet.getString("total_count"));
 				myPageDTO.setPayment(resultSet.getString("pay"));
 				}
 
-			}catch(Exception e){
+			} catch(Exception e) {
 				e.printStackTrace();
-			}finally {
+			} finally {
 				connection.close();
 			}
 			return myPageDTO;
@@ -57,9 +56,9 @@ throws SQLException{
 
 				result = preparedStatement.executeUpdate();
 
-			}catch(SQLException e) {
+			} catch(SQLException e) {
 				e.printStackTrace();
-			}finally {
+			} finally {
 				connection.close();
 			}
 			return result;
